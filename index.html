@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <div class="container">
+                <p>Movie<span>Mania</span><img src="./assets/png-clipart-popcorn-popcorn-euclidean-popcorn-food-happy-birthday-vector-images.png" alt=""></p>
+            </div>
+        </div>
+        <div class="search__container">
+            <div class="search__element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form__control" placeholder="Search Movie Title ..." id="movie-search-box" onkeyup="findMovies()" onclick="findMovies()">
+                <div class="search__list" id="search-list">
+                    <!-- <div class="search__list--item">
+                        <div class="search__list-item--thumbnail">
+                            <img src="./medium-cover.jpg" alt="">
+                        </div>
+                        <div class="search__item--info">
+                            <h3>Guardians of the Galaxy Vol. 2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="result__container">
+                <div class="result__grid" id="result-grid">
+                    <div class="movie__poster">
+                        <img src="./assets/medium-cover.jpg" alt="">
+                    </div>
+                    <div class="movie__info">
+                        <h3 class="movie__info--title">Peaky Blinders</h3>
+                        <ul class="movie__info--misc">
+                            <li class="movie__info--year">Year: 2013–2022</li>
+                            <li class="movie__info--rated">Ratings: TV-MA</li>
+                            <li class="movie__info--released">Released: 30 Sep 2014</li>
+                        </ul>
+                        <p class="movie__info--genre"><b>Genre:</b> Crime, Drama</p>
+                        <p class="movie__info--writer"><b>Writer:</b> Steven Knight</p>
+                        <p class="movie__info--actors"><b>Actors:</b> Cillian Murphy, Paul Anderson, Sophie Rundle</p>
+                        <p class="movie__info--plot"><b>Plot:</b> A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.</p>
+                        <p class="movie__info--language"><b>Language:</b> English, Romanian, Irish Gaelic, Italian, Yiddish, French</p>
+                        <p class="movie__info--awards"><b><i class="fas fa-award"></i></b> Won 1 BAFTA Award21 wins & 47 nominations total</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
